@@ -19,7 +19,7 @@ public class BaseClass {
 	@BeforeMethod(groups = {"Smoke","Regression"})
 	public void launchBrowser()
 	{
-		System.out.println("Initialize browser");
+		
 		String browserType = UtilClass.getConfigFileInfo("browsertype");		
 		
 		if(browserType.equalsIgnoreCase("firefox"))
